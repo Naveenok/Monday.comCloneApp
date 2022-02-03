@@ -1,12 +1,12 @@
 import React from "react";
-import logo from "../images/monday-logo.png";
-import { NavBarContainer, GetStarted, Image } from "../styles/NavBar.style";
+import logo from "../assets/monday-logo.png";
+import { NavBarContainer, Button, Image } from "../styles/NavBar.style";
 
 const NavBar = () => {
   return (
     <NavBarContainer>
       <Image src={logo} alt="Logo"></Image>
-      <GetStarted>Get Started &gt;</GetStarted>
+      <Button>Get Started &gt;</Button>
     </NavBarContainer>
   );
 };
