@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const BodyContainer = styled.div``;
+
 export const AboutContainer = styled.div`
-  padding: 60px;
+  padding: 0 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,6 +23,16 @@ export const Image = styled.img`
 
 export const ModayDetails = styled.div`
   display: flex;
-  padding: 20px;
-  gap: 50px;
+  padding: 0 20px;
+  gap: 20px;
+`;
+
+export const BadgeContainer = styled.div`
+  text-align: center;
+  padding: 50px 0;
+`;
+
+export const ManagingContainer = styled(BadgeContainer)`
+  width: 35%;
+  margin: auto;
 `;

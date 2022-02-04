@@ -5,6 +5,8 @@ import {
   BrandContainer,
   Image,
   ModayDetails,
+  BadgeContainer,
+  ManagingContainer,
 } from "../styles/Body";
 import { Button } from "../styles/NavBar.style";
 import mars from "../assets/mars_wrigley.webp";
@@ -15,6 +17,7 @@ import tesla from "../assets/tesla.webp";
 import one from "../assets/1.png";
 import two from "../assets/2.webp";
 import three from "../assets/3.webp";
+import badges from "../assets/badges.webp";
 
 const Body = () => {
   return (
@@ -28,8 +31,8 @@ const Body = () => {
         <div>
           <video
             src=" https://dapulse-res.cloudinary.com/video/upload/q_auto,f_auto,cs_copy/remote_mondaycom_static/video/video-library/monday2.0-tests%20dont%20use/Homepage_roulette_bigger_1.mp4"
-            width="600"
-            height="300"
+            width="729"
+            height="514"
             loop
             muted
             autoPlay
@@ -69,6 +72,19 @@ const Body = () => {
           </p>
         </div>
       </ModayDetails>
+      <BadgeContainer>
+        <div>
+          <Image src={badges} alt="badges" imageSize="1309px" />
+        </div>
+        <ManagingContainer>
+          <h1>Managing can be easier with monday.com</h1>
+          <p>
+            Even the best managers have a hard time keeping up with their team's
+            tasks. Let monday.com help you stay on top of your tasks.
+          </p>
+          <Button>Show me how &gt;</Button>
+        </ManagingContainer>
+      </BadgeContainer>
     </BodyContainer>
   );
 };
