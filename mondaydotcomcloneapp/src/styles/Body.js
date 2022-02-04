@@ -19,3 +19,9 @@ export const BrandContainer = styled.div`
 export const Image = styled.img`
   width: ${(props) => (props.imageSize ? props.imageSize : "")};
 `;
+
+export const ModayDetails = styled.div`
+  display: flex;
+  padding: 20px;
+  gap: 50px;
+`;
