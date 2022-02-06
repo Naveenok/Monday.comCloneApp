@@ -49,10 +49,12 @@ export const ReviewTag = styled.div`
 `;
 
 export const ReviewText = styled.div`
+  font-size: 25px;
   padding: 32px;
   text-align: center;
   line-height: 36px;
   font-weight: 300;
+  height: 250px;
 `;
 
 export const ReviewImage = styled.div`
@@ -63,8 +65,17 @@ export const ReviewImage = styled.div`
 export const ReviewedBy = styled.div`
   text-align: center;
   padding: 10px 0;
+  line-height: 20px;
 `;
 
 export const ReviewSpan = styled.div`
   font-weight: bold;
+`;
+
+export const ReviewsContainer = styled.div`
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 `;

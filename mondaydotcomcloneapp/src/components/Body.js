@@ -7,13 +7,8 @@ import {
   ModayDetails,
   BadgeContainer,
   ManagingContainer,
-  ReviewTag,
-  ReviewContainer,
-  ReviewText,
-  ReviewImage,
-  ReviewedBy,
-  ReviewSpan,
-} from "../styles/Body";
+  ReviewsContainer,
+} from "../styles/Body.style";
 import { Button } from "../styles/NavBar.style";
 import mars from "../assets/mars_wrigley.webp";
 import nhl from "../assets/nhl.webp";
@@ -24,7 +19,21 @@ import one from "../assets/1.png";
 import two from "../assets/2.webp";
 import three from "../assets/3.webp";
 import badges from "../assets/badges.webp";
-import star from "../assets/star.webp";
+import Review from "./Review";
+
+const ReviewData = [
+  {
+    review:
+      "monday.com is a great software to have all projects organized for all types of business. It's completely customizable and allows for multiple users to update status of assignments.",
+    reviewBy:
+      "Derek Lopez., Business owner at DLC Electrical Services LLC | Reviewed on Capterra",
+  },
+  {
+    review:
+      "״monday.com is interactive, and visually striking. It works very well for the mapping of business processes, and to track the costs of each stage of the project in question.",
+    reviewBy: "Jonas F., Salesperson at Tiendeo | Reviewed on G2 Crowd",
+  },
+];
 
 const Body = () => {
   return (
@@ -92,27 +101,12 @@ const Body = () => {
           <Button>Show me how &gt;</Button>
         </ManagingContainer>
       </BadgeContainer>
-      <h1>Why teams love monday.com</h1>
-      <ReviewContainer>
-        <ReviewTag></ReviewTag>
-        <ReviewText>
-          "monday.com is a great software to have all projects organized for all
-          types of business. It's completely customizable and allows for
-          multiple users to update status of assignments."
-        </ReviewText>
-        <ReviewImage>
-          <img src={star} alt="star" />
-          <img src={star} alt="star" />
-          <img src={star} alt="star" />
-          <img src={star} alt="star" />
-        </ReviewImage>
-        <ReviewedBy>
-          <ReviewSpan>
-            Derek Lopez., Business owner at DLC Electrical Services LLC
-          </ReviewSpan>
-          | Reviewed on Capterra
-        </ReviewedBy>
-      </ReviewContainer>
+      <h1 style={{ textAlign: "center" }}>Why teams love monday.com</h1>
+      <ReviewsContainer>
+        {ReviewData.map((review, index) => (
+          <Review id={index} review={review} />
+        ))}
+      </ReviewsContainer>
     </BodyContainer>
   );
 };
