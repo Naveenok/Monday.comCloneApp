@@ -18,6 +18,7 @@ import one from "../assets/1.png";
 import two from "../assets/2.webp";
 import three from "../assets/3.webp";
 import badges from "../assets/badges.webp";
+import star from "../assets/star.webp";
 
 const Body = () => {
   return (
@@ -85,6 +86,27 @@ const Body = () => {
           <Button>Show me how &gt;</Button>
         </ManagingContainer>
       </BadgeContainer>
+      <h1>Why teams love monday.com</h1>
+      <div>
+        <div>
+          "monday.com is a great software to have all projects organized for all
+          types of business. It's completely customizable and allows for
+          multiple users to update status of assignments."
+        </div>
+        <div></div>
+        <div>
+          <img src={star} alt="star" />
+          <img src={star} alt="star" />
+          <img src={star} alt="star" />
+          <img src={star} alt="star" />
+        </div>
+        <div>
+          <span>
+            Derek Lopez., Business owner at DLC Electrical Services LLC
+          </span>
+          | Reviewed on Capterra
+        </div>
+      </div>
     </BodyContainer>
   );
 };
