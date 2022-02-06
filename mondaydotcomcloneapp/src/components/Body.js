@@ -7,6 +7,12 @@ import {
   ModayDetails,
   BadgeContainer,
   ManagingContainer,
+  ReviewTag,
+  ReviewContainer,
+  ReviewText,
+  ReviewImage,
+  ReviewedBy,
+  ReviewSpan,
 } from "../styles/Body";
 import { Button } from "../styles/NavBar.style";
 import mars from "../assets/mars_wrigley.webp";
@@ -87,26 +93,26 @@ const Body = () => {
         </ManagingContainer>
       </BadgeContainer>
       <h1>Why teams love monday.com</h1>
-      <div>
-        <div>
+      <ReviewContainer>
+        <ReviewTag></ReviewTag>
+        <ReviewText>
           "monday.com is a great software to have all projects organized for all
           types of business. It's completely customizable and allows for
           multiple users to update status of assignments."
-        </div>
-        <div></div>
-        <div>
+        </ReviewText>
+        <ReviewImage>
           <img src={star} alt="star" />
           <img src={star} alt="star" />
           <img src={star} alt="star" />
           <img src={star} alt="star" />
-        </div>
-        <div>
-          <span>
+        </ReviewImage>
+        <ReviewedBy>
+          <ReviewSpan>
             Derek Lopez., Business owner at DLC Electrical Services LLC
-          </span>
+          </ReviewSpan>
           | Reviewed on Capterra
-        </div>
-      </div>
+        </ReviewedBy>
+      </ReviewContainer>
     </BodyContainer>
   );
 };

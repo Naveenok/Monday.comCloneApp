@@ -36,3 +36,35 @@ export const ManagingContainer = styled(BadgeContainer)`
   width: 35%;
   margin: auto;
 `;
+
+export const ReviewContainer = styled.div`
+  width: 410px;
+  height: 472px;
+  background-color: #dfd9d9;
+`;
+
+export const ReviewTag = styled.div`
+  background-color: #00ca72;
+  height: 10px;
+`;
+
+export const ReviewText = styled.div`
+  padding: 32px;
+  text-align: center;
+  line-height: 36px;
+  font-weight: 300;
+`;
+
+export const ReviewImage = styled.div`
+  text-align: center;
+  padding: 20px;
+`;
+
+export const ReviewedBy = styled.div`
+  text-align: center;
+  padding: 10px 0;
+`;
+
+export const ReviewSpan = styled.div`
+  font-weight: bold;
+`;
