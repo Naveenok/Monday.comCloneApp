@@ -40,7 +40,7 @@ export const ManagingContainer = styled(BadgeContainer)`
 export const ReviewContainer = styled.div`
   width: 410px;
   height: 472px;
-  background-color: #dfd9d9;
+  background-color: #f5ecec;
 `;
 
 export const ReviewTag = styled.div`
