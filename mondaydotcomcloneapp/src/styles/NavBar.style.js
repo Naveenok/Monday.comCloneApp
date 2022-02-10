@@ -4,11 +4,11 @@ export const NavBarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem;
+  padding: 2rem;
 `;
 
 export const Image = styled.img`
-  max-width: 10rem;
+  max-width: 16rem;
 `;
 
 export const Button = styled.button`

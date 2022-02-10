@@ -2,6 +2,7 @@ import React from "react";
 import {
   BodyContainer,
   AboutContainer,
+  VideoContainer,
   BrandContainer,
   Image,
   ModayDetails,
@@ -40,29 +41,41 @@ const Body = () => {
     <BodyContainer>
       <AboutContainer>
         <div>
-          <h1>Take your business to the next level with monday.com</h1>
-          <p>Manage all your business's day-to-day activities with ease.</p>
+          <h1 style={{ fontSize: "2.2rem" }}>
+            Take your business to the next level with monday.com
+          </h1>
+          <p style={{ fontSize: "1.5rem" }}>
+            Manage all your business's day-to-day activities with ease.
+          </p>
           <Button>show me how &gt;</Button>
         </div>
         <div>
-          <video
+          <VideoContainer
             src=" https://dapulse-res.cloudinary.com/video/upload/q_auto,f_auto,cs_copy/remote_mondaycom_static/video/video-library/monday2.0-tests%20dont%20use/Homepage_roulette_bigger_1.mp4"
-            width="729"
-            height="514"
             loop
             muted
             autoPlay
-          ></video>
+          ></VideoContainer>
         </div>
       </AboutContainer>
       <BrandContainer>
-        <Image src={mars} alt="mars" imageSize="200px" />
-        <Image src={nhl} alt="nhl" imageSize="100px" />
-        <Image src={universal} alt="universal" imageSize="150px" />
-        <Image src={glossier} alt="glossier" imageSize="100px" />
-        <Image src={tesla} alt="tesla" imageSize="50px" />
+        <div>
+          <Image src={mars} alt="mars" />
+        </div>
+        <div>
+          <Image src={nhl} alt="nhl" />
+        </div>
+        <div>
+          <Image src={universal} alt="universal" />
+        </div>
+        <div>
+          <Image src={glossier} alt="glossier" />
+        </div>
+        <div>
+          <Image src={tesla} alt="tesla" />
+        </div>
       </BrandContainer>
-      <ModayDetails>
+      {/*  <ModayDetails>
         <div>
           <Image src={one} alt="one" imageSize="400px" />
           <h2>See the bigger picture</h2>
@@ -106,7 +119,7 @@ const Body = () => {
         {ReviewData.map((review, index) => (
           <Review id={index} review={review} />
         ))}
-      </ReviewsContainer>
+      </ReviewsContainer> */}
     </BodyContainer>
   );
 };

@@ -5,20 +5,29 @@ export const BodyContainer = styled.div``;
 export const AboutContainer = styled.div`
   padding: 0 60px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+`;
+
+export const VideoContainer = styled.video`
+  max-width: 100%;
+  max-height: 570px;
 `;
 
 export const BrandContainer = styled.div`
-  height: 150px;
+  min-height: 15rem;
+  max-width: 100%;
   background-color: #f7f2f2;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 2rem;
 `;
 
 export const Image = styled.img`
-  width: ${(props) => (props.imageSize ? props.imageSize : "")};
+  max-width: 100%;
+  max-height: 100%;
 `;
 
 export const ModayDetails = styled.div`
