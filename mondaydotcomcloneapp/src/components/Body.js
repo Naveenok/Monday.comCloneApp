@@ -6,6 +6,8 @@ import {
   BrandContainer,
   Image,
   ModayDetails,
+  MondayDetailsData,
+  ModayDetailsContainer,
   BadgeContainer,
   ManagingContainer,
   ReviewsContainer,
@@ -44,7 +46,7 @@ const Body = () => {
           <h1 style={{ fontSize: "2.2rem" }}>
             Take your business to the next level with monday.com
           </h1>
-          <p style={{ fontSize: "1.5rem" }}>
+          <p style={{ fontSize: "1.5rem", lineHeight: "3rem" }}>
             Manage all your business's day-to-day activities with ease.
           </p>
           <Button>show me how &gt;</Button>
@@ -75,33 +77,53 @@ const Body = () => {
           <Image src={tesla} alt="tesla" />
         </div>
       </BrandContainer>
-      {/*  <ModayDetails>
-        <div>
-          <Image src={one} alt="one" imageSize="400px" />
-          <h2>See the bigger picture</h2>
-          <p>
-            Gain important insights and a clear overview of your budget spend,
-            projects status and more.
-          </p>
-        </div>
-        <div>
-          <Image src={two} alt="two" imageSize="400px" />
-          <h2>See the bigger picture</h2>
-          <p>
-            Put your repetitive tasks on autopilot and let this Automations
-            feature do the work for you.
-          </p>
-        </div>
-        <div>
-          <Image src={three} alt="three" imageSize="400px" />
-          <h2>See the bigger picture</h2>
-          <p>
-            Integrate with your favorite tools and centralize your data in one
-            place.
-          </p>
-        </div>
-      </ModayDetails>
-      <BadgeContainer>
+      <ModayDetailsContainer>
+        <ModayDetails>
+          <div
+            style={{ fontSize: "1.5rem", height: "54.6rem", maxWidth: "40rem" }}
+          >
+            <div>
+              <Image src={one} alt="one" />
+            </div>
+            <MondayDetailsData>
+              <h2>See the bigger picture</h2>
+              <p>
+                Gain important insights and a clear overview of your budget
+                spend, projects status and more.
+              </p>
+            </MondayDetailsData>
+          </div>
+          <div
+            style={{ fontSize: "1.5rem", height: "54.6rem", maxWidth: "40rem" }}
+          >
+            <div>
+              <Image src={two} alt="two" />
+            </div>
+            <MondayDetailsData>
+              <h2>See the bigger picture</h2>
+              <p>
+                Put your repetitive tasks on autopilot and let this Automations
+                feature do the work for you.
+              </p>
+            </MondayDetailsData>
+          </div>
+          <div
+            style={{ fontSize: "1.5rem", height: "54.6rem", maxWidth: "40rem" }}
+          >
+            <div>
+              <Image src={three} alt="three" />
+            </div>
+            <MondayDetailsData>
+              <h2>See the bigger picture</h2>
+              <p>
+                Integrate with your favorite tools and centralize your data in
+                one place.
+              </p>
+            </MondayDetailsData>
+          </div>
+        </ModayDetails>
+      </ModayDetailsContainer>
+      {/*  <BadgeContainer>
         <div>
           <Image src={badges} alt="badges" imageSize="1309px" />
         </div>

@@ -13,6 +13,7 @@ export const AboutContainer = styled.div`
 export const VideoContainer = styled.video`
   max-width: 100%;
   max-height: 570px;
+  padding: 2rem;
 `;
 
 export const BrandContainer = styled.div`
@@ -29,11 +30,24 @@ export const Image = styled.img`
   max-width: 100%;
   max-height: 100%;
 `;
+export const ModayDetailsContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 export const ModayDetails = styled.div`
   display: flex;
-  padding: 0 20px;
-  gap: 20px;
+  padding: 0 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+`;
+
+export const MondayDetailsData = styled.div`
+  width: 80%;
+  padding: 0 5rem;
+  line-height: 3rem;
+  font-size: 1.6rem;
 `;
 
 export const BadgeContainer = styled.div`
