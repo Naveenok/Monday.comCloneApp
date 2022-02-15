@@ -52,11 +52,13 @@ export const MondayDetailsData = styled.div`
 
 export const BadgeContainer = styled.div`
   text-align: center;
-  padding: 50px 0;
+  padding: 5rem 0;
 `;
 
 export const ManagingContainer = styled(BadgeContainer)`
-  width: 35%;
+  line-height: 3rem;
+  font-size: 1.6rem;
+  width: 50%;
   margin: auto;
 `;
 

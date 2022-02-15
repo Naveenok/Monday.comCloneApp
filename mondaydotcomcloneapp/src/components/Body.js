@@ -123,9 +123,9 @@ const Body = () => {
           </div>
         </ModayDetails>
       </ModayDetailsContainer>
-      {/*  <BadgeContainer>
+      <BadgeContainer>
         <div>
-          <Image src={badges} alt="badges" imageSize="1309px" />
+          <Image src={badges} alt="badges" />
         </div>
         <ManagingContainer>
           <h1>Managing can be easier with monday.com</h1>
@@ -136,7 +136,7 @@ const Body = () => {
           <Button>Show me how &gt;</Button>
         </ManagingContainer>
       </BadgeContainer>
-      <h1 style={{ textAlign: "center" }}>Why teams love monday.com</h1>
+      {/*   <h1 style={{ textAlign: "center" }}>Why teams love monday.com</h1>
       <ReviewsContainer>
         {ReviewData.map((review, index) => (
           <Review id={index} review={review} />
