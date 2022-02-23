@@ -63,34 +63,43 @@ export const ManagingContainer = styled(BadgeContainer)`
 `;
 
 export const ReviewContainer = styled.div`
-  width: 410px;
-  height: 472px;
+  display: flex;
+  flex-direction: column;
+  max-width: 41rem;
+  height: 47.2rem;
   background-color: #f5ecec;
 `;
 
 export const ReviewTag = styled.div`
   background-color: #00ca72;
-  height: 10px;
+  height: 1rem;
 `;
 
 export const ReviewText = styled.div`
-  font-size: 25px;
-  padding: 32px;
+  font-size: 2.5rem;
+  padding: 3.2rem;
   text-align: center;
-  line-height: 36px;
+  line-height: 3.6rem;
   font-weight: 300;
-  height: 250px;
+  height: 25rem;
+  @media (max-width: 480px) {
+    font-size: 1.8rem;
+  }
 `;
 
 export const ReviewImage = styled.div`
   text-align: center;
-  padding: 20px;
+  padding: 2rem;
 `;
 
 export const ReviewedBy = styled.div`
+  font-size: 1.6rem;
   text-align: center;
-  padding: 10px 0;
-  line-height: 20px;
+  padding: 1rem 0;
+  line-height: 2rem;
+  @media (max-width: 480px) {
+    font-size: 1.2rem;
+  }
 `;
 
 export const ReviewSpan = styled.div`
@@ -98,9 +107,10 @@ export const ReviewSpan = styled.div`
 `;
 
 export const ReviewsContainer = styled.div`
-  padding: 50px;
+  padding: 5rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 5rem;
 `;

@@ -136,12 +136,12 @@ const Body = () => {
           <Button>Show me how &gt;</Button>
         </ManagingContainer>
       </BadgeContainer>
-      {/*   <h1 style={{ textAlign: "center" }}>Why teams love monday.com</h1>
+      <h1 style={{ textAlign: "center" }}>Why teams love monday.com</h1>
       <ReviewsContainer>
         {ReviewData.map((review, index) => (
           <Review id={index} review={review} />
         ))}
-      </ReviewsContainer> */}
+      </ReviewsContainer>
     </BodyContainer>
   );
 };
